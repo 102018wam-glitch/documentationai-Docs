@@ -1,0 +1,118 @@
+---
+title: Introduction to Валерий Медведев
+description: Welcome to the documentation space for Валерий Медведев, a platform designed to organize and manage all your project documentation efficiently.
+---
+
+## Overview
+
+Валерий Медведев provides a centralized space to create, organize, and manage your project documentation. You can build structured docs sites with MDX support, version history, and search capabilities. Use it to streamline collaboration across your team and deliver polished documentation to users.
+
+<Callout kind="info">
+  Валерий Медведев uses brand color `<#3B82F6>` for primary elements like buttons and links.
+</Callout>
+
+## Key Features
+
+Discover the core capabilities that make Валерий Medvedев powerful for documentation management.
+
+<Columns cols={3}>
+  <Card title="MDX-Powered Pages" icon="book-open" href="/docs/mdx-guide">
+    Write rich documentation using MDX components like `<Cards>`, `<Steps>`, and `<Tabs>`.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/docs/versioning">
+    Track changes with Git integration and maintain multiple doc versions.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="/docs/search">
+    Full-text search and intuitive sidebar navigation for quick access.
+  </Card>
+  <Card title="Custom Branding" icon="palette" href="/docs/branding">
+    Apply your brand color `<#3B82F6>` and custom themes.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running with Валерий Медведев in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.example.com` using your email.
+  </Step>
+  <Step title="New Space" icon="plus">
+    Click "New Documentation Space" and name it "Валерий Медведев".
+  </Step>
+  <Step title="Add Pages" icon="file-plus">
+    Create your first page with the MDX editor.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Deploy your site to a custom domain.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="CLI,API">
+  ```bash
+  # Install CLI
+  npm install -g valery-medvedev-cli
+
+  # Initialize space
+  valery init my-docs --template docs
+  ```
+  ```javascript
+  // API example
+  const response = await fetch('https://api.example.com/spaces', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` },
+    body: JSON.stringify({ name: 'Валерий Медведев' })
+  });
+  ```
+</CodeGroup>
+
+## Navigation Guide
+
+Explore the documentation efficiently.
+
+<Tabs>
+  <Tab title="Sidebar" icon="menu">
+    Use the left sidebar for sections like Overview, Guides, and API Reference. Expand categories to view pages.
+  </Tab>
+  <Tab title="Search" icon="search">
+    Press `<kbd>Ctrl</kbd>+<kbd>K</kbd>` or click the search icon to find content instantly.
+  </Tab>
+  <Tab title="Quick Links" icon="link">
+    Jump to key pages:
+
+    <Card title="Quickstart" icon="rocket" href="/quickstart" />
+    <Card title="Authentication" icon="lock" href="/authentication" />
+  </Tab>
+</Tabs>
+
+## Brand Guidelines
+
+Follow these to maintain consistency.
+
+<Expandable title="Primary Color Usage" default-open="true">
+  Use `<#3B82F6>` for:
+
+  - Primary buttons
+  - Links
+  - Header accents
+
+  Example CSS:
+  ```css
+  :root {
+    --brand-primary: #3B82F6;
+  }
+
+  .btn-primary {
+    background-color: var(--brand-primary);
+  }
+  ```
+</Expandable>
+
+<Expandable title="Typography & Icons">
+  Pair with sans-serif fonts and Lucide icons for a modern look.
+</Expandable>
+
+<Callout kind="tip">
+  Ready to dive deeper? Check [Quickstart](/quickstart) for hands-on setup.
+</Callout>
